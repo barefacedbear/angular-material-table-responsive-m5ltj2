@@ -15,7 +15,7 @@ export class DropdownComponent implements OnInit, OnDestroy {
   z=[1,2,3];
 
   ngOnInit() {
-    this.subject.debounceTime(700).subscribe(searchTextValue => {
+    this.subject.debounceTime(2000).subscribe(searchTextValue => {
       this.z.push(...[4,5,6]);
     });
   }
