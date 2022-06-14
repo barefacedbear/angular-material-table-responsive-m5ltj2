@@ -1,5 +1,5 @@
 <mat-select>
 <input matInput class="p-3 search-box" #product placeholder="Search product" autocomplete="off"
-(keyup)="search($event)" (keydown)="$event.stopPropagation()" style="width: 95%;">
+(keyup)="search(product.value)" (keydown)="$event.stopPropagation()" style="width: 95%;">
   <mat-option *ngFor="let x of z" [value]="x">{{x}}</mat-option>
 </mat-select>
